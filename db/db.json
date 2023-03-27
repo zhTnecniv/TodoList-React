@@ -2,13 +2,8 @@
   "todos": [
     {
       "content": "Be Happy and Awesome",
-      "completed": true,
-      "id": 4
-    },
-    {
-      "content": "Exercise Everyday",
       "completed": false,
-      "id": 6
+      "id": 4
     },
     {
       "content": "Be Beautiful and Proud",
@@ -17,12 +12,12 @@
     },
     {
       "content": "Be Kind and Grateful to Parents",
-      "completed": true,
+      "completed": false,
       "id": 8
     },
     {
       "content": "Achieve Your Goals",
-      "completed": true,
+      "completed": false,
       "id": 9
     },
     {
@@ -32,7 +27,7 @@
     },
     {
       "content": "Embrace Life and Love",
-      "completed": true,
+      "completed": false,
       "id": 11
     },
     {
@@ -47,7 +42,7 @@
     },
     {
       "content": "Run and Look Forward",
-      "completed": true,
+      "completed": false,
       "id": 14
     }
   ]

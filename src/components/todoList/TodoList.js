@@ -17,18 +17,10 @@ class TodoList extends React.Component {
     }
 
     handleSubmit = () => {
-        this.props.handleTodoCreate({content: this.state.inputText, completed: false});
+        this.props.handleTodoCreate({ content: this.state.inputText, completed: false });
         this.setState({
             inputText: ""
         })
-    }
-
-    handleDelete = (targetTodo) => {
-        this.props.handleTodoDelete(targetTodo);
-    }
-
-    handleComplete = (targetTodo) => {
-        this.props.handleTodoUpdate(targetTodo);
     }
 
     handleEdit = (id) => {
@@ -59,8 +51,8 @@ class TodoList extends React.Component {
                         {todos.filter((todo) => todo.completed === false).map((todo) =>
                             <TodoItem key={todo.id} todo={todo}
                                 isEdit={todo.id === this.state.isEdit}
-                                handleDelete={this.handleDelete}
-                                handleComplete={this.handleComplete}
+                                handleDelete={this.props.handleTodoDelete}
+                                handleComplete={this.props.handleTodoUpdate}
                                 handleEdit={this.handleEdit}
                                 handleSave={this.handleSave} />
                         )}
@@ -70,8 +62,8 @@ class TodoList extends React.Component {
                         {todos.filter((todo) => todo.completed === true).map((todo) =>
                             <TodoItem key={todo.id} todo={todo}
                                 isEdit={todo.id === this.state.isEdit}
-                                handleDelete={this.handleDelete}
-                                handleComplete={this.handleComplete}
+                                handleDelete={this.props.handleTodoDelete}
+                                handleComplete={this.props.handleTodoUpdate}
                                 handleEdit={this.handleEdit}
                                 handleSave={this.handleSave} />
                         )}

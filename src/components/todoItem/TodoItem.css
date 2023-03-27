@@ -1,0 +1,18 @@
+.todoitem {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoitem-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}

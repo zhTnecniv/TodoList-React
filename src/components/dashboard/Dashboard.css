@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
